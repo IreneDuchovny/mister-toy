@@ -1,0 +1,63 @@
+ [
+    {
+        "_id": "f67gf",
+        "name": "Talking Bear",
+        "price": 123,
+        "labels": ["Doll", "Battery Powered", "Baby"],
+        "createdAt": 1631031801011,
+        "inStock": true,
+        "imgUrl": "toy1.png",
+        "description": "This adorable bear is sure to be a hit with kids of all ages. Press its tummy to hear it say a variety of phrases. Requires 2 AA batteries (not included)."
+    },
+
+    {
+        "_id": "5dfg8",
+        "name": "Remote Control toy",
+        "price": 45,
+        "labels": ["Toy", "Vehicle", "Remote Control"],
+        "createdAt": 1631033002011,
+        "inStock": true,
+        "imgUrl": "toy2.png",
+        "description":" This remote control toy is perfect for kids who love to play with vehicles. With a sleek design and easy-to-use remote, kids can maneuver the toy in any direction."
+    },
+    {
+        "_id": "fg7dg",
+        "name": "Board Game",
+        "price": 25,
+        "labels": ["Family", "Strategy", "Entertainment"],
+        "createdAt": 1631033103011,
+        "inStock": true,
+        "imgUrl": "toy3.png",
+        "description":"This board game is a great choice for family game night. With a variety of gameplay options, it's sure to provide hours of entertainment for players of all ages."
+    },
+    {
+        "_id": "fg748",
+        "name": "Rubber Duck",
+        "price": 800,
+        "labels": ["Electronics", "Computer", "Work"],
+        "createdAt": 1631033204011,
+        "inStock": true,
+        "imgUrl": "toy4.png",
+        "description":" This rubber duck is a classic toy that never goes out of style. Perfect for bath time or playtime, this duck is sure to provide endless fun."
+    },
+    {
+        "_id": "df89a",
+        "name": "Gardening Tools",
+        "price": 40,
+        "labels": ["Outdoor", "Plants", "Yard Work"],
+        "createdAt": 1631033305011,
+        "inStock": true,
+        "imgUrl": "toy5.png",
+        "description":"These gardening tools are perfect for anyone with a green thumb. With a variety of implements to choose from, you'll have everything you need to care for your plants."
+    },
+    {
+        "_id": "afhw6",
+        "name": "Musical Instrument",
+        "price": 150,
+        "labels": ["Music", "Art", "Talent"],
+        "createdAt": 1631033406011,
+        "inStock": true,
+        "imgUrl": "toy6.png",
+        "description": "This musical instrument is perfect for aspiring musicians. Whether you're just starting out or you're a seasoned pro, this instrument will help you create beautiful music."
+    }
+]
