@@ -33,7 +33,7 @@ function remove(toyId, loggedinUser) {
     const idx = toys.findIndex(toy => toy._id === toyId)
     if (idx === -1) return Promise.reject('No Such toy')
     const toy = toys[idx]
-    if (toy.owner._id !== loggedinUser._id) return Promise.reject('Not your toy')
+    // if (toy.owner._id !== loggedinUser._id) return Promise.reject('Not your toy')
     toys.splice(idx, 1)
     return _writetoysToFile()
 }
@@ -43,7 +43,7 @@ function save(toy, loggedinUser) {
     if (toy._id) {
         const toyToUpdate = toys.find(currtoy => currtoy._id === toy._id)
         if (!toyToUpdate) return Promise.reject('No such toy')
-        if (toyToUpdate.owner._id !== loggedinUser._id) return Promise.reject('Not your toy')
+        // if (toyToUpdate.owner._id !== loggedinUser._id) return Promise.reject('Not your toy')
 
         // toyToUpdate.vendor = toy.vendor
         // toyToUpdate.speed = toy.speed
@@ -55,7 +55,7 @@ function save(toy, loggedinUser) {
        
     } else {
         toy._id = _makeId()
-        toy.owner = { "username" : loggedinUser.username, "fullname" : loggedinUser.fullname, "_id" : loggedinUser._id }
+        // toy.owner = { "username" : loggedinUser.username, "fullname" : loggedinUser.fullname, "_id" : loggedinUser._id }
         toys.push(toy)
     }
     return _writetoysToFile().then(() => toy)

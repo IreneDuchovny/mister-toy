@@ -30,32 +30,36 @@ export function AppHeader() {
             })
     }
 
- 
+
 
     return (
-        
-        <header className="app-header full">
+
+        <header className="app-header ">
             <div className="contacts-header">
-                <h1>contact us:</h1>
+                <h1>contact us: + 972-542224422</h1>
             </div>
-            <nav>
-                <NavLink to="/">Home</NavLink> |
-                <NavLink to="/toy">Toys</NavLink> |
-                <NavLink to="/about">About</NavLink> |
-               
-            </nav>
+            <div className="main-container-header flex.space-between">
+                <div className="nav-header flex ">
 
-            <h1> ToyZ </h1>
+                    <div className="logo-name"> ToyZ </div>
+                    <nav className="main-nav-container">
+                        <NavLink className="nav-link" to="/">Home</NavLink>
+                        <NavLink className="nav-link" to="/toy"> Toys</NavLink>
+                        <NavLink className="nav-link" to="/about"> About</NavLink>
 
-            {user && <section className="user-info">
-                <p>{user.fullname} <span>${user.score.toLocaleString()}</span></p>
-                <button onClick={onLogout}>Logout</button>
-            </section>}
+                    </nav>
+                </div>
 
-            {!user && <section className="user-info">
-                <LoginSignup setUser={setUser} />
-            </section>}
 
+                {user && <div className="user-info-div"> <section className="user-info">
+                    <p>{user.fullname} <span>${user.score.toLocaleString()}</span></p>
+                    <button onClick={onLogout}>Logout</button>
+                </section></div>}
+
+                {!user && <section className="user-info">
+                    <LoginSignup setUser={setUser} />
+                </section>}
+            </div>
         </header>
     )
 }

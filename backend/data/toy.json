@@ -112,45 +112,5 @@
       "fullname": "Puki Ja",
       "_id": "u101"
     }
-  },
-  {
-    "name": "Talking  2",
-    "price": 123,
-    "labels": [
-      "Bear",
-      "Battery Powered",
-      "Baby"
-    ],
-    "createdAt": 1631031801011,
-    "inStock": true,
-    "imgUrl": "toy1.png",
-    "description": "This adorable bear is sure to be a hit with kids of all ages. Press its tummy to hear it say a variety of phrases. Requires 2 AA batteries (not included).",
-    "_id": "bptsp",
-    "owner": {
-      "_id": "u101",
-      "username": "puki",
-      "fullname": "Puki Ja",
-      "password": "secret1",
-      "score": 100
-    }
-  },
-  {
-    "name": "Talking  2",
-    "price": 123,
-    "labels": [
-      "Bear",
-      "Battery Powered",
-      "Baby"
-    ],
-    "createdAt": 1631031801011,
-    "inStock": true,
-    "imgUrl": "toy1.png",
-    "description": "This adorable bear is sure to be a hit with kids of all ages. Press its tummy to hear it say a variety of phrases. Requires 2 AA batteries (not included).",
-    "_id": "l00on",
-    "owner": {
-      "username": "puki",
-      "fullname": "Puki Ja",
-      "_id": "u101"
-    }
   }
 ]

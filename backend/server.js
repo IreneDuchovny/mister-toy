@@ -8,6 +8,8 @@ const app = express()
 // App configuration
 app.use(express.static('public'))
 
+const loggedinUser={};
+
 const corsOptions = {
     origin: ['http://127.0.0.1:8080', 'http://localhost:8080', 'http://127.0.0.1:3000', 'http://localhost:3000'],
     credentials: true
@@ -35,8 +37,8 @@ app.get('/api/toy', (req, res) => {
 
 // Update
 app.put('/api/toy', (req, res) => {
-    const loggedinUser = userService.validateToken(req.cookies.loginToken)
-    if (!loggedinUser) return res.status(401).send('Cannot update toy')
+    // const loggedinUser = userService.validateToken(req.cookies.loginToken)
+    // if (!loggedinUser) return res.status(401).send('Cannot update toy')
 
     const toy = req.body
     console.log('toy ---------', toy)
@@ -52,8 +54,8 @@ app.put('/api/toy', (req, res) => {
 
 // Create
 app.post('/api/toy', (req, res) => {
-    const loggedinUser = userService.validateToken(req.cookies.loginToken)
-    if (!loggedinUser) return res.status(401).send('Cannot add toy')
+    // const loggedinUser = userService.validateToken(req.cookies.loginToken)
+    // if (!loggedinUser) return res.status(401).send('Cannot add toy')
 
     const toy = req.body
     toyService.save(toy, loggedinUser)
@@ -81,8 +83,8 @@ app.get('/api/toy/:toyId', (req, res) => {
 
 // Remove
 app.delete('/api/toy/:toyId', (req, res) => {
-    const loggedinUser = userService.validateToken(req.cookies.loginToken)
-    if (!loggedinUser) return res.status(401).send('Cannot update toy')
+    // const loggedinUser = userService.validateToken(req.cookies.loginToken)
+    // if (!loggedinUser) return res.status(401).send('Cannot update toy')
 
     const { toyId } = req.params
     toyService.remove(toyId, loggedinUser)

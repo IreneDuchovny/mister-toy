@@ -24,7 +24,7 @@ export function AppFooter() {
                 {/* Currently {toysCount} toys in the shop */}
             </h5>
             <p>
-                Coffeerights to all - Count: {count}
+                Developed by Irene Duchovny- Count: {count}
             </p>
           
            

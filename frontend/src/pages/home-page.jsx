@@ -24,11 +24,11 @@ export function HomePage() {
     const imgUrl = 'logo.png'
     return (
         <section>
-            <h2>
+            {/* <h2>
                 Count {count}
                 <button onClick={() => { changeCount(1) }}>+</button>
                 <button onClick={() => { changeCount(10) }}>+10</button>
-            </h2 >
+            </h2 > */}
             <img src={require(`../assets/img/${imgUrl}`)} />
         </section >
     )
