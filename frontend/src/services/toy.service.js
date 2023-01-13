@@ -3,12 +3,12 @@ import { storageService } from './async-storage.service.js'
 import { utilService } from './util.service.js'
 import { loadFromStorage, saveToStorage } from './syncStorage'
 import { userService } from './user.service.js'
-// import { httpService } from './http.service.js'
+import { httpService } from './http.service.js'
 
-const STORAGE_KEY = 'toyDB'
+const STORAGE_KEY = 'toy'
 const BASE_URL = 'toy/'
 
-_createToys()
+
 
 export const toyService = {
     query,
@@ -23,6 +23,57 @@ export const toyService = {
     getTotalPrecentPerType
 
 }
+window.ts = toyService
+
+async function query(filterBy = getDefaultFilter()) {
+   
+    return httpService.get(BASE_URL, filterBy)
+// }
+
+// function query(filterBy = getDefaultFilter()) {
+//     return storageService.query(STORAGE_KEY)
+//         .then(toys => {
+//             if (filterBy.txt) {
+//                 const regex = new RegExp(filterBy.txt, 'i')
+//                 toys = toys.filter(toy => regex.testtoy.name)
+//             }
+//             if (filterBy.maxPrice) {
+//                 toys = toys.filter(toy => toy.price <= filterBy.maxPrice)
+//             }
+//             return toys
+//         })
+}
+
+async function getById(toyId) {
+    // return storageService.get(STORAGE_KEY, toyId)
+    return httpService.get(BASE_URL + toyId)
+}
+
+
+async function remove(toyId) {
+    // return Promise.reject('Not now!')
+    return httpService.delete(BASE_URL + toyId)
+    // return storageService.remove(STORAGE_KEY, toyId)
+
+}
+
+async function save(toy) {
+    if (toy._id) {
+        return httpService.put(BASE_URL+toy._id, toy)
+        // return storageService.put(STORAGE_KEY, toy)
+    } else {
+        // when switching to backend - remove the next line
+        // toy.owner = userService.getLoggedinUser()
+        return httpService.post(BASE_URL, toy)
+        // return storageService.post(STORAGE_KEY, toy)
+    }
+}
+function getEmptyToy() {
+    return {
+        "price": 0,
+        "inStock": true
+    }
+}
 
 function getTotalPrecentPerType(type) {
     return storageService.query(STORAGE_KEY)
@@ -36,24 +87,7 @@ function getTotalPrecentPerType(type) {
 }
 
 
-// function query(filterBy = getDefaultFilter()) {
-//     const queryParams = "" // `?vendor=${filterBy.txt}&maxPrice=${filterBy.maxPrice}`
-//     // return httpService.get(BASE_URL + queryParams)
-// }
 
-function query(filterBy = getDefaultFilter()) {
-    return storageService.query(STORAGE_KEY)
-        .then(toys => {
-            if (filterBy.txt) {
-                const regex = new RegExp(filterBy.txt, 'i')
-                toys = toys.filter(toy => regex.testtoy.name)
-            }
-            if (filterBy.maxPrice) {
-                toys = toys.filter(toy => toy.price <= filterBy.maxPrice)
-            }
-            return toys
-        })
-}
 
 
 function getTotalForType(type) {
@@ -67,40 +101,13 @@ function getToyTypes() {
     return ['kids', 'adults']
 }
 
-function getById(toyId) {
-    return storageService.get(STORAGE_KEY, toyId)
-    // return httpService.get(BASE_URL + toyId)
-}
 
-function remove(toyId) {
-    // return Promise.reject('Not now!')
-    // return httpService.delete(BASE_URL + toyId)
-    return storageService.remove(STORAGE_KEY, toyId)
-
-}
-
-function save(toy) {
-    if (toy._id) {
-        // return httpService.put(BASE_URL, toy)
-        return storageService.put(STORAGE_KEY, toy)
-    } else {
-        // when switching to backend - remove the next line
-        // toy.owner = userService.getLoggedinUser()
-        // return httpService.post(BASE_URL, toy)
-        return storageService.post(STORAGE_KEY, toy)
-    }
-}
 
 
 function getDefaultFilter() {
     return { txt: '', maxPrice: 0 }
 }
-function getEmptyToy() {
-    return {
-        "price": 0,
-        "inStock": true
-    }
-}
+
 
 function getRandomToy() {
     return {

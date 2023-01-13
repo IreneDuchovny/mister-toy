@@ -15,7 +15,7 @@ import { ToyDetails } from './pages/toy-details';
 import { ToyEdit } from './pages/toy-edit';
 import {ToyReports} from './pages/toy-reports';
 
-import "./assets/style/scss/main.scss"
+// import "./assets/style/scss/main.scss"
 
 export function App() {
 

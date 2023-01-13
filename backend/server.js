@@ -44,7 +44,7 @@ app.get('/**', (req, res) => {
 })
 
 // const logger = require('./services/logger.service')
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 5000
 http.listen(port, () => {
     console.log('Server is running on port: ' + port)
 })
@@ -111,8 +111,7 @@ app.post('/api/user/logout', (req, res) => {
     res.send('Logged out')
 })
 
-// Listen will always be the last line in our server!
-app.listen(3030, () => console.log('Server listening on port 3030!'))
+
 
 
 

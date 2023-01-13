@@ -26,6 +26,9 @@ async function getToyById(req, res) {
 async function addToy(req, res) {
     const toy = req.body
     try {
+        // add timestamp
+        toy.createdAt = Date.now()
+       
         const savedToy = await toyService.add(toy)
         res.json(savedToy)
     } catch (err) {
