@@ -21,7 +21,7 @@ export function HomePage() {
         dispatch({ type: 'CHANGE_BY', diff })
     }
 
-    const imgUrl = 'logo.png'
+    const imgUrl = '3127919-7.png'
     return (
         <section>
             {/* <h2>
@@ -29,7 +29,7 @@ export function HomePage() {
                 <button onClick={() => { changeCount(1) }}>+</button>
                 <button onClick={() => { changeCount(10) }}>+10</button>
             </h2 > */}
-            <img src={require(`../assets/img/${imgUrl}`)} />
+            <img className="home-page-img" src={require(`../assets/img/${imgUrl}`)} />
         </section >
     )
 

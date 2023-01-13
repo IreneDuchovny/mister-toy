@@ -13,8 +13,9 @@ import { AppFooter } from './cmps/app-footer';
 import { ToyIndex } from './pages/toy-index';
 import { ToyDetails } from './pages/toy-details';
 import { ToyEdit } from './pages/toy-edit';
+import {ToyReports} from './pages/toy-reports';
 
-
+import "./assets/style/scss/main.scss"
 
 export function App() {
 
@@ -31,6 +32,7 @@ export function App() {
                             <Route element={<ToyDetails />} path="/toy/:toyId" />
                             <Route element={<ToyEdit />} path="/toy/edit/:toyId" />
                             <Route element={<ToyEdit />} path="/toy/edit" />
+                            <Route element={<ToyReports />} path="/report" />
                         </Routes>
                     </main>
                     <AppFooter />

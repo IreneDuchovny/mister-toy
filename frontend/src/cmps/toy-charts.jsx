@@ -1,0 +1,93 @@
+import React, { useEffect } from 'react';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Doughnut } from 'react-chartjs-2';
+import { toyService } from '../services/toy.service';
+
+ChartJS.register(ArcElement, Tooltip, Legend);
+
+export function MyChart({ types, inventoryPerType }) {
+    const [isLoading, setIsLoading] = React.useState(true)
+
+    function chartToyTypes() {
+        const data = {
+            labels: toyService.getToyTypes(),
+            datasets: [
+                {
+                    label: 'toys by type',
+                    data: types,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        // 'rgba(255, 206, 86, 0.2)',
+                        // 'rgba(75, 192, 192, 0.2)',
+                        // 'rgba(153, 102, 255, 0.2)',
+                        // 'rgba(255, 159, 64, 0.2)',
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        // 'rgba(255, 206, 86, 1)',
+                        // 'rgba(75, 192, 192, 1)',
+                        // 'rgba(153, 102, 255, 1)',
+                        // 'rgba(255, 159, 64, 1)',
+                    ],
+                    borderWidth: 1,
+                },
+            ],
+        };
+
+        return <div style={{ width: '30%', margin: 'auto' }}>
+            <Doughnut data={data} />;
+        </div>
+    }
+
+    function chartToyInventory() {
+        const data = {
+            labels: toyService.getToyTypes(),
+            datasets: [
+                {
+                    label: '% of in-stock toys',
+                    data: inventoryPerType,
+                    backgroundColor: [
+                        // 'rgba(255, 99, 132, 0.2)',
+                        // 'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        // 'rgba(153, 102, 255, 0.2)',
+                        // 'rgba(255, 159, 64, 0.2)',
+                    ],
+                    borderColor: [
+                        // 'rgba(255, 99, 132, 1)',
+                        // 'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        // 'rgba(153, 102, 255, 1)',
+                        // 'rgba(255, 159, 64, 1)',
+                    ],
+                    borderWidth: 1,
+                },
+            ],
+        };
+
+        return <div style={{ width: '30%', margin: 'auto' }}>
+            <Doughnut data={data} />;
+        </div>
+    }
+
+    useEffect(() => {
+        setIsLoading(false)
+    }, [])
+
+    return (
+        <div className="main-charts ">
+            <div>
+                <h4> Toys per type</h4>
+                {chartToyTypes()} </div>
+            <div>
+                <h4>Toy inventory % per type </h4>
+                {chartToyInventory()} </div>
+        </div>
+    )
+    
+
+}

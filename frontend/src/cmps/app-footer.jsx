@@ -23,8 +23,9 @@ export function AppFooter() {
             <h5>
                 {/* Currently {toysCount} toys in the shop */}
             </h5>
-            <p>
-                Developed by Irene Duchovny- Count: {count}
+            <p className="footer-content">
+                Developed by Irene Duchovny
+                {/* - Count: {count} */}
             </p>
           
            

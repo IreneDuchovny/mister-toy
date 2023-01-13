@@ -11,9 +11,15 @@
 }
 
 footer {
-  background-color: var(--gray3);
-  color: var(--clr1bg);
-  padding: 1em;
+  position:absolute;
+    width:100%;
+    bottom:0px;
+  /* background-color: var(--gray3); */
+  background-color:  transparent;
+  color: white;
+  font-family:  lato , sans-serif;
+  font-size: 0.8rem;
+  /* padding: 1em; */
   text-align: center;
 }
 

@@ -1,8 +1,9 @@
+db.toys.insertMany(
 [
   {
-    "_id": "f67gf",
     "name": "Talking Bear",
     "price": 123,
+    "type": "kids",
     "labels": [
       "Doll",
       "Battery Powered",
@@ -19,7 +20,6 @@
     "description": "This adorable bear is sure to be a hit with kids of all ages. Press its tummy to hear it say a variety of phrases. Requires 2 AA batteries (not included)."
   },
   {
-    "_id": "5dfg8",
     "name": "Remote Control toy",
     "price": 45,
     "labels": [
@@ -38,9 +38,9 @@
     "description": " This remote control toy is perfect for kids who love to play with vehicles. With a sleek design and easy-to-use remote, kids can maneuver the toy in any direction."
   },
   {
-    "_id": "fg7dg",
     "name": "Board Game",
     "price": 25,
+    "type": "kids",
     "labels": [
       "Family",
       "Strategy",
@@ -57,9 +57,9 @@
     "description": "This board game is a great choice for family game night. With a variety of gameplay options, it's sure to provide hours of entertainment for players of all ages."
   },
   {
-    "_id": "fg748",
     "name": "Rubber Duck",
     "price": 800,
+    "type": "kids",
     "labels": [
       "Plushtoys",
       "Toddlers",
@@ -76,9 +76,9 @@
     "description": " This rubber duck is a classic toy that never goes out of style. Perfect for bath time or playtime, this duck is sure to provide endless fun."
   },
   {
-    "_id": "df89a",
     "name": "Gardening Tools",
     "price": 40,
+    "type": "kids",
     "labels": [
       "Outdoor",
       "Plants",
@@ -95,9 +95,9 @@
     }
   },
   {
-    "_id": "afhw6",
     "name": "Musical Instrument",
     "price": 150,
+    "type": "kids",
     "labels": [
       "Music",
       "Art",
@@ -112,5 +112,120 @@
       "fullname": "Puki Ja",
       "_id": "u101"
     }
+  },
+  {
+    "name": "Strategy Board Game",
+    "price": 50,
+    "type": "adult",
+    "labels": [
+      "Adult",
+      "Board Game",
+      "Strategy"
+    ],
+    "createdAt": 1641031801011,
+    "inStock": true,
+    "imgUrl": "toy12.png",
+    "description": "This strategy board game is designed for adults and is perfect for game night with friends or family. With a variety of gameplay options and challenges, it's sure to provide hours of entertainment.",
+    "owner": {
+      "username": "puki",
+      "fullname": "Puki Ja",
+      "_id": "u101"
+    }
+  },
+  {
+    "name": "Virtual Reality Headset",
+    "price": 100,
+    "type": "adult",
+    "labels": [
+      "Adult",
+      "VR",
+      "Gaming"
+    ],
+    "createdAt": 1641031811011,
+    "inStock": true,
+    "imgUrl": "toy13.png",
+    "description": "This virtual reality headset is perfect for immersing yourself in a variety of gaming experiences. Compatible with most VR-ready games and video content.",
+    "owner": {
+      "username": "puki",
+      "fullname": "Puki Ja",
+      "_id": "u101"
+    }
+  },
+  {
+    "name": "Drone",
+    "price": 200,
+    "type": "adult",
+    "labels": [
+      "Adult",
+      "Electronics",
+      "Aerial"
+    ],
+    "createdAt": 1641031821011,
+    "inStock": true,
+    "imgUrl": "toy14.png",
+    "description": "This drone is perfect for aerial photography or exploring the great outdoors. With a HD camera and advanced navigation features, this drone is a great choice for hobbyists or professionals.",
+    "owner": {
+      "username": "puki",
+      "fullname": "Puki Ja",
+      "_id": "u101"
+    }
+  },
+  {
+    "name": "Escape Room Game",
+    "price": 25,
+    "type": "adult",
+    "labels": [
+      "Adult",
+      "Puzzle",
+      "Interactive"
+    ],
+    "createdAt": 1641031831011,
+    "inStock": true,
+    "imgUrl": "toy15.png",
+    "description": "This escape room game is perfect for players who love puzzles and challenges.  it's include mystery, brain-teaser and logic that will provide hours of entertainment for you and your friends.",
+    "owner": {
+      "username": "puki",
+      "fullname": "Puki Ja",
+      "_id": "u101"
+    }
+  },
+  {
+    "name": "3D Printing Pen",
+    "price": 80,
+    "type": "adult",
+    "labels": [
+      "Adult",
+      "Art",
+      "Technology"
+    ],
+    "createdAt": 1641031841011,
+    "inStock": true,
+    "imgUrl": "toy16.png",
+    "description": "This 3D printing pen is perfect for artists and designers who want to bring their creations to life. With this pen, you can easily create 3D models, sculptures, and other unique designs.",
+    "owner": {
+      "username": "puki",
+      "fullname": "Puki Ja",
+      "_id": "u101"
+    }
+  },
+  {
+    "name": "Puzzle Sculpture",
+    "price": 30,
+    "type": "adult",
+    "labels": [
+      "Adult",
+      "Puzzle",
+      "Art"
+    ],
+    "createdAt": 1641031852011,
+    "inStock": true,
+    "imgUrl": "toy17.png",
+    "description": "This puzzle sculpture is perfect for those who love the combination of art and puzzles. It's challenging and fun to assemble the pieces together to make a beautiful sculpture.",
+    "owner": {
+      "username": "puki",
+      "fullname": "Puki Ja",
+      "_id": "u101"
+    }
   }
 ]
+)
