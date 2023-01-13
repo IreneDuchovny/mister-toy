@@ -4,7 +4,8 @@ import { httpService } from './http.service.js'
 
 const STORAGE_KEY = 'userDB'
 const STORAGE_KEY_LOGGEDIN = 'loggedinUser'
-const BASE_URL = 'user/'
+const AUTH_BASE_URL = 'auth/'
+const USER_BASE_URL = 'user/'
 
 export const userService = {
     login,
@@ -18,11 +19,11 @@ export const userService = {
 window.us = userService
 
 function getById(userId) {
-    return storageService.get(STORAGE_KEY, userId)
+    return httpService.get(USER_BASE_URL + userId)
 }
 
 function login(credentials) {
-    return httpService.post(BASE_URL + 'login', credentials)
+    return httpService.post(AUTH_BASE_URL + 'login', credentials)
         .then(_setLoggedinUser)
         .catch(err => {
             console.log('err:', err)
@@ -50,7 +51,7 @@ function login(credentials) {
 
 function signup({ username, password, fullname }) {
     const user = { username, password, fullname, score: 10000 }
-    return httpService.post(BASE_URL + 'signup', user)
+    return httpService.post(AUTH_BASE_URL + 'signup', user)
         .then(_setLoggedinUser)
 }
 
@@ -66,7 +67,8 @@ function updateScore(diff) {
         .then(user => {
             if (user.score + diff < 0) return Promise.reject('No credit')
             user.score += diff
-            return storageService.put(STORAGE_KEY, user)
+            return httpService.put(USER_BASE_URL + user._id, user)
+            // return storageService.put(STORAGE_KEY, user)
                 .then((user) => {
                     _setLoggedinUser(user)
                     return user.score
@@ -75,7 +77,7 @@ function updateScore(diff) {
 }
 
 function logout() {
-    return httpService.post(BASE_URL + 'logout')
+    return httpService.post(AUTH_BASE_URL + 'logout')
         .then(()=>{
             sessionStorage.removeItem(STORAGE_KEY_LOGGEDIN)
         })

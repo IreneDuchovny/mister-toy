@@ -105,7 +105,7 @@ function getToyTypes() {
 
 
 function getDefaultFilter() {
-    return { txt: '', maxPrice: 0 }
+    return { txt: '', label: '', maxPrice: 1000,  }
 }
 
 

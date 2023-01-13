@@ -34,27 +34,62 @@ export function ToyFilter({ onSetFilter }) {
     }
 
 
-    return <section className="toy-filter full main-layout">
-        <h2>Toys Filter</h2>
+    return <section className="toy-filter ">
+        {/* <h2>Toys Filter</h2> */}
         <form onSubmit={onSubmitFilter}>
-            <label htmlFor="vendor">Vendor:</label>
-            <input type="text"
-                id="vendor"
+            <label  htmlFor="search"></label>
+            <input className="search-section" type="text"
+                id="search"
                 name="txt"
-                placeholder="By vendor"
+                placeholder="Search"
                 value={filterByToEdit.txt}
+                // onChange={() => utilService.debounce(handleChange,200)}
                 onChange={handleChange}
                 ref={elInputRef}
             />
+            <select className= "category-section" name="label" id="label" value={filterByToEdit.label} onChange={handleChange}>
+            <option value="" disabled>Category</option>
+                <option value="">All</option>
+                <option value="Remote Control">Remote Control</option>
+                <option value="VR">VR</option>
+                <option value="Aerial">Aerial</option>
+                <option value="Puzzle">Puzzle</option>
+                <option value="technology">Technology</option>
+                <option value="Battery Powered">Battery Powered</option>
+                <option value="Gaming">Gaming</option>
+                <option value="Strategy">Strategy</option>
+                <option value="Interactive">Interactive</option>
+                <option value="Music">Music</option>
+                <option value="Art">Art</option>
+                <option value="Toy">Toy</option>
+                <option value="Adult">Adult</option>
+                <option value="Yard Work">Yard Work</option>
+                <option value="Family">Family</option>
+                <option value="Doll">Doll</option>
+                <option value="Vehicle">Vehicle</option>
+                <option value="Toddlers">Toddlers</option>
+                <option value="Baby">Baby</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Outdoor">Outdoor</option>
+                <option value="Talent">Talent</option>
+                <option value="Plants">Plants</option>
+                <option value=">Plush Toys">Plush Toys</option>
+                <option value="Fun">Fun</option>
+                <option value="Board Game">Board Game</option>
 
-            <label htmlFor="maxPrice">Max price:</label>
-            <input type="number"
+
+            </select>
+            <label className= "price-section" htmlFor="maxPrice"> 1$ </label>
+            <input className= "price-section-input"
+                type="range"
                 id="maxPrice"
                 name="maxPrice"
-                placeholder="By max price"
+                min="1"
+                max="1000"
                 value={filterByToEdit.maxPrice}
-                onChange={handleChange}
-            />
+                onChange={handleChange} />
+                <output  htmlFor="maxPrice" id="rangeval">{filterByToEdit.maxPrice}$ </output>
 
             <button hidden>Filter</button>
         </form>

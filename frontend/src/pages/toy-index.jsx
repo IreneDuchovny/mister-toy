@@ -17,9 +17,8 @@ export function ToyIndex() {
 
     const toys = useSelector((storeState) => storeState.toyModule.toys)
     const isLoading = useSelector((storeState) => storeState.toyModule.isLoading)
-   
+
     // const [toys, settoys] = useState([])
-   
 
     const dispatch = useDispatch()
 
@@ -59,9 +58,10 @@ export function ToyIndex() {
     }
 
     function onEditToy(toy) {
+     
         const price = +prompt('New price?')
         const toyToSave = { ...toy, price }
-
+if (isNaN(price)) return showErrorMsg('Price must be a number')
         saveToy(toyToSave)
             .then((savedToy) => {
                 showSuccessMsg(`toy updated to price: $${savedToy.price}`)
@@ -71,44 +71,40 @@ export function ToyIndex() {
             })
     }
 
- 
-
     function setFilter(filterBy) {
         console.log('setFilter', filterBy)
         onloadToys(filterBy)
-
     }
-
     return <section>
-        <h3>toys App</h3>
+        {/* <h3>toys App</h3> */}
         <main className="main-container">
             {/* <PopupMenu top={<h2>Popup in toy Index</h2>}>
                 <Text/>
                 <Text/>
                 <Text/>
             </PopupMenu> */}
-            <Link to={`/toy/edit`}>Add toy</Link>
-            <button onClick={onAddToy}>Add random toy ⛐</button>
 
-            <ToyFilter onSetFilter={setFilter} />
-            {isLoading && <p>Loading...</p>}
+            <div className="filter-btns-container">
+                <ToyFilter onSetFilter={setFilter} />
+                <div className="toy-add-btn">
+                <Link to={`/toy/edit`}><button >Add a toy</button> </Link>
+                </div>
+                {/* <button onClick={onAddToy}>Random toy </button> */}
+            </div>
+            {/* {isLoading && <p>Loading...</p>} */}
+
             <ToyList
                 toys={toys}
                 onRemoveToy={onRemoveToy}
                 onEditToy={onEditToy}
-                
                 nums={[7, 8]}
                 txt={'77'}
             />
-            <hr />
-            
+            {/* <hr /> */}
         </main>
     </section>
-
-
 }
 
-
-const Text = () => {
-    return <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eum!</span>
-}
+// const Text = () => {
+//     return <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eum!</span>
+// }

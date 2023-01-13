@@ -3,10 +3,20 @@ const dbService = require('../../services/db.service')
 const utilService = require('../../services/util.service')
 const ObjectId = require('mongodb').ObjectId
 
-async function query() {
+async function query(filterBy = {}) {
     try {
-        const criteria = {}
-        //TODO: add criteriaS
+        let criteria = {}
+        if (filterBy.txt) {
+            const txtCriteria = { $regex: filterBy.txt, $options: 'i' }
+            criteria = { $or: [{ name: txtCriteria }, { description: txtCriteria }] }
+        }
+        if (filterBy.label) {
+            criteria.labels = filterBy.label
+        }
+  if (filterBy.maxPrice) {
+            criteria.price = { $lte: +filterBy.maxPrice }
+        }
+
         const collection = await dbService.getCollection('toys')
         let toys = await collection.find(criteria).toArray()
         return toys
@@ -39,11 +49,11 @@ async function remove(toyId) {
 
 async function update(toy) {
     try {
-        const saveToy= {
-            name : toy.name,
-            price : toy.price,
-            type : toy.type,
-            inStock : toy.inStock,
+        const saveToy = {
+            name: toy.name,
+            price: toy.price,
+            type: toy.type,
+            inStock: toy.inStock,
             description: toy.description,
 
         }

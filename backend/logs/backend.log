@@ -1,0 +1,6 @@
+13.1.2023, 21:53:02 - DEBUG - auth.service - signup with username: TEST1, fullname: TEST1 
+13.1.2023, 21:53:03 - DEBUG - auth.service - login with username: TEST1 
+13.1.2023, 21:53:03 - DEBUG - auth.route - new account created: {"username":"TEST1","password":"$2b$10$BkzrorZvNsBJXIl6Y90.duidNdBgxo0/j0IiWnGHc9BAaQY4Y9Ha2","fullname":"TEST1","score":0,"_id":"63c1b69f7f6366d2f08c756f"} 
+13.1.2023, 21:53:03 - INFO - User login:  | {"_id":"63c1b69f7f6366d2f08c756f","username":"TEST1","fullname":"TEST1","score":0} 
+13.1.2023, 21:54:28 - DEBUG - auth.service - login with username: TEST1 
+13.1.2023, 21:54:29 - INFO - User login:  | {"_id":"63c1b69f7f6366d2f08c756f","username":"TEST1","fullname":"TEST1","score":0} 

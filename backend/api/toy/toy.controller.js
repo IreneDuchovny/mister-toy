@@ -4,6 +4,7 @@ const toyService = require('./toy.service')
 
 async function getToys(req, res) {
     try {
+        console.log('req.query', req.query)
         const toys = await toyService.query(req.query || {})
         res.json(toys)
     } catch (err) {

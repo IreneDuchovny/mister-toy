@@ -19,6 +19,6 @@ button[disabled] {
     cursor: not-allowed;
 }
 input:focus {
-    background-color: var(--clr1bg);
+    background-color: var(--mainGreenLight);
     transition: background-color 1s;
 }

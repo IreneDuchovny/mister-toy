@@ -1,4 +1,49 @@
 .toy-filter {
     background-color:  var(--mainBodyColor);
-    padding: 1em;
+    /* padding: 1em; */
+    align-self: flex-end;
 }
+.filter-btns-container{
+    /* display: flex; */
+    font-family: 'Lato', sans-serif;
+    /* align-content: end; */
+}
+.category-section,.search-section{
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid var(--mainBorderColor);
+}
+.search-section{
+margin-right: 7px;
+}
+.price-section{
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 0.8em;
+    /* align-self: center; */
+    /* border: 1px solid var(--mainBorderColor); */
+    /* border-color: var(--mainBorderColor); */
+}
+
+.price-section-input{ 
+    /* border: 1px solid var(--mainBorderColor); */
+    border-radius: 5px;
+
+    /* padding: 5px;
+    margin: 5px;  */
+    width: 100px;
+    -webkit-appearance: none;
+    background-color: var(--mainGreen);
+}  
+
+/* input[type="range"] {
+    color: orange;
+    }
+    
+    input[type="range"]::-webkit-slider-thumb {
+    background: orange;
+    }
+    
+    input[type="range"]::-moz-range-thumb {
+    background:orange;
+    } */
