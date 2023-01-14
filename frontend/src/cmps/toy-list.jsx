@@ -3,7 +3,7 @@ import { type } from "@testing-library/user-event/dist/type/index.js"
 import { ToyPreview } from "./toy-preview.jsx"
 
 
-export function ToyList({ toys, onRemoveToy, onEditToy }) {
+export function ToyList({ toys, onRemoveToy, onEditToy,user }) {
     // console.log('nums:', nums)
 
     return <ul className="toy-list">
@@ -13,8 +13,9 @@ export function ToyList({ toys, onRemoveToy, onEditToy }) {
                 <ToyPreview toy={toy} />
 
                 <div>
-                    <button onClick={() => { onRemoveToy(toy._id) }}>x</button>
-                    <button onClick={() => { onEditToy(toy) }}>Change price</button>
+                {user &&  user.isAdmin &&  <button onClick={() => { onRemoveToy(toy._id) }}>x</button>}
+
+                {user &&  user.isAdmin &&  <button onClick={() => { onEditToy(toy) }}>Change price</button> }
                 </div>
 
           

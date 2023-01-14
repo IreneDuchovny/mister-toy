@@ -2,7 +2,7 @@
 // const { useNavigate, useParams, Link } = ReactRouterDOM
 import { useEffect, useState } from 'react'
 import { Link, useParams, useNavigate } from 'react-router-dom'
-
+import { useDispatch, useSelector } from 'react-redux'
 import { toyService } from "../services/toy.service.js"
 import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service.js"
 
@@ -10,7 +10,8 @@ export function ToyEdit() {
     const [toyToEdit, setToyToEdit] = useState(toyService.getEmptyToy())
     const navigate = useNavigate()
     const { toyId } = useParams()
-
+    const user = useSelector((storeState) => storeState.userModule.user)
+    
     useEffect(() => {
         if (!toyId) return
         loadToy()
@@ -45,7 +46,9 @@ export function ToyEdit() {
             })
     }
 
-    return <section className="toy-edit">
+    return <div> {user &&  user.isAdmin &&   
+        <section className="toy-edit">
+
         <h2>{toyToEdit._id ? 'Edit this toy' : 'Add a new toy'}</h2>
 
         <form onSubmit={onsaveToy} className=" flex flex-column">
@@ -75,12 +78,12 @@ export function ToyEdit() {
             />
 
             
-            
-
             <div>
                 <button>{toyToEdit._id ? 'Save' : 'Add'}</button>
                 <Link to="/toy">Cancel</Link>
             </div>
         </form>
-    </section>
+    </section> || <div>Not allowed to view this page</div>
+} 
+    </div>
 }

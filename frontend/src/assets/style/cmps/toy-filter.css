@@ -1,4 +1,5 @@
 .toy-filter {
+ margin-top: 5px;
     background-color:  var(--mainBodyColor);
     /* padding: 1em; */
     align-self: flex-end;

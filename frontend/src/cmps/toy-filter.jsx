@@ -4,7 +4,21 @@ import { toyService } from "../services/toy.service.js"
 import { utilService } from "../services/util.service.js"
 
 
+
 export function ToyFilter({ onSetFilter }) {
+
+    useEffect(() => {
+        const queryString = window.location.href.split('?')[1]
+        console.log('query string:', queryString) // txt=lego&label=Remote Control&maxPrice=1000
+        const queryStringParams = new URLSearchParams(queryString)
+        const txtSearch = queryStringParams.get('txt') || ''
+        const labelSearch = queryStringParams.get('label') || ''
+        const priceSearch = queryStringParams.get('maxPrice') || 1000
+        const typeSearch = queryStringParams.get('type') || ''
+        setFilterByToEdit({ txt: txtSearch, label: labelSearch, maxPrice: priceSearch, type: typeSearch })
+        }
+    , [])
+
 
     const [filterByToEdit, setFilterByToEdit] = useState(toyService.getDefaultFilter())
 
@@ -25,6 +39,8 @@ export function ToyFilter({ onSetFilter }) {
         let { value, name: field, type } = target
         value = (type === 'number') ? +value : value
         setFilterByToEdit((prevFilter) => ({ ...prevFilter, [field]: value }))
+        // reflect in url
+      
     }
 
     function onSubmitFilter(ev) {

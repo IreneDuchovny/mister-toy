@@ -16,6 +16,9 @@ async function query(filterBy = {}) {
   if (filterBy.maxPrice) {
             criteria.price = { $lte: +filterBy.maxPrice }
         }
+        if (filterBy.type) {
+            criteria.type = filterBy.type
+        }
 
         const collection = await dbService.getCollection('toys')
         let toys = await collection.find(criteria).toArray()

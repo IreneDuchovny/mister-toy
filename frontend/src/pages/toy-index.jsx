@@ -17,6 +17,7 @@ export function ToyIndex() {
 
     const toys = useSelector((storeState) => storeState.toyModule.toys)
     const isLoading = useSelector((storeState) => storeState.toyModule.isLoading)
+    const user = useSelector((storeState) => storeState.userModule.user)
 
     // const [toys, settoys] = useState([])
 
@@ -86,14 +87,16 @@ if (isNaN(price)) return showErrorMsg('Price must be a number')
 
             <div className="filter-btns-container">
                 <ToyFilter onSetFilter={setFilter} />
-                <div className="toy-add-btn">
+                {user &&  user.isAdmin && <div className="toy-add-btn">
+                  
                 <Link to={`/toy/edit`}><button >Add a toy</button> </Link>
-                </div>
+                </div>}
                 {/* <button onClick={onAddToy}>Random toy </button> */}
             </div>
             {/* {isLoading && <p>Loading...</p>} */}
 
             <ToyList
+            user={user}
                 toys={toys}
                 onRemoveToy={onRemoveToy}
                 onEditToy={onEditToy}

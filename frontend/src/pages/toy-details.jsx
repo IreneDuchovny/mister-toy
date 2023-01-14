@@ -12,7 +12,8 @@ export function ToyDetails() {
     const [toy, setToy] = useState(null)
     const { toyId } = useParams()
     const navigate = useNavigate()
-
+    const user = useSelector((storeState) => storeState.userModule.user)
+    
     useEffect(() => {
         loadToy()
     }, [toyId])
@@ -33,6 +34,6 @@ export function ToyDetails() {
         <h5>Price: ${toy.price}</h5>
         <img src={require(`../assets/img/${toy.imgUrl || 'default.png'}`)} />
       <p>{toy.description}</p>
-        <Link to={`/toy/edit/${toy._id}`}>Edit</Link>
+      {user &&  user.isAdmin &&   <Link to={`/toy/edit/${toy._id}`}>Edit</Link>}
     </section>
 }

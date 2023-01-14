@@ -23,7 +23,10 @@
   margin-right: 20px;
   font-size: 24px;
   font-family:  lato , sans-serif;
+  /* text-decoration: none; */
 }
+
+
 .nav-header {
   padding: 1% 1% 0% 1%;
 

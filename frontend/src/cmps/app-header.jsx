@@ -9,7 +9,7 @@ import { logout } from '../store/user.action.js'
 
 import { LoginSignup } from './login-signup.jsx'
 import { useDispatch, useSelector } from 'react-redux'
-import { NavLink } from 'react-router-dom'
+import { NavLink , Link} from 'react-router-dom'
 
 export function AppHeader() {
 
@@ -41,7 +41,7 @@ export function AppHeader() {
             <div className="main-container-header flex.space-between">
                 <div className="nav-header flex ">
 
-                    <div className="logo-name"> ToyZ </div>
+                <Link to="/"><div className="logo-name"> ToyZ </div></Link> 
                     <nav className="main-nav-container">
                         <NavLink className="nav-link" to="/">Home</NavLink>
                         <NavLink className="nav-link" to="/toy"> Toys</NavLink>
