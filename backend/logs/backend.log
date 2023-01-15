@@ -182,3 +182,205 @@
 14.1.2023, 17:16:08 - INFO - Req was made 
 14.1.2023, 21:19:33 - INFO - Req was made 
 14.1.2023, 21:19:33 - INFO - Req was made 
+14.1.2023, 22:02:05 - INFO - Req was made 
+14.1.2023, 22:02:13 - INFO - Req was made 
+14.1.2023, 22:02:13 - INFO - Req was made 
+14.1.2023, 22:02:23 - INFO - Req was made 
+14.1.2023, 22:02:24 - INFO - Req was made 
+14.1.2023, 22:02:27 - INFO - Req was made 
+14.1.2023, 22:02:27 - INFO - Req was made 
+14.1.2023, 22:04:49 - INFO - Req was made 
+14.1.2023, 22:04:50 - INFO - Req was made 
+14.1.2023, 22:04:51 - INFO - Req was made 
+14.1.2023, 22:05:00 - INFO - Req was made 
+15.1.2023, 10:28:26 - INFO - Req was made 
+15.1.2023, 10:28:28 - INFO - Req was made 
+15.1.2023, 10:28:29 - INFO - Req was made 
+15.1.2023, 10:28:33 - INFO - Req was made 
+15.1.2023, 10:28:34 - INFO - Req was made 
+15.1.2023, 10:30:16 - INFO - Req was made 
+15.1.2023, 10:30:17 - INFO - Req was made 
+15.1.2023, 10:34:04 - INFO - Req was made 
+15.1.2023, 10:34:05 - INFO - Req was made 
+15.1.2023, 10:36:39 - INFO - Req was made 
+15.1.2023, 10:36:39 - INFO - Req was made 
+15.1.2023, 10:38:14 - INFO - Req was made 
+15.1.2023, 10:38:14 - INFO - Req was made 
+15.1.2023, 10:49:16 - INFO - Req was made 
+15.1.2023, 10:49:17 - INFO - Req was made 
+15.1.2023, 11:00:05 - INFO - Req was made 
+15.1.2023, 11:00:05 - INFO - Req was made 
+15.1.2023, 11:00:34 - INFO - Req was made 
+15.1.2023, 11:00:35 - INFO - Req was made 
+15.1.2023, 11:11:00 - INFO - Req was made 
+15.1.2023, 11:11:00 - INFO - Req was made 
+15.1.2023, 11:11:06 - INFO - Req was made 
+15.1.2023, 11:11:06 - INFO - Req was made 
+15.1.2023, 11:22:39 - INFO - Req was made 
+15.1.2023, 11:22:40 - INFO - Req was made 
+15.1.2023, 11:22:51 - DEBUG - auth.service - login with username: TEST1 
+15.1.2023, 11:22:51 - INFO - User login:  | {"_id":"63c1b69f7f6366d2f08c756f","username":"TEST1","fullname":"TEST1","score":0,"isAdmin":true} 
+15.1.2023, 11:23:01 - INFO - Req was made 
+15.1.2023, 11:23:01 - INFO - Req was made 
+15.1.2023, 14:47:28 - INFO - Req was made 
+15.1.2023, 14:47:28 - INFO - Req was made 
+15.1.2023, 14:49:07 - INFO - Req was made 
+15.1.2023, 14:49:07 - INFO - Req was made 
+15.1.2023, 14:52:16 - INFO - Req was made 
+15.1.2023, 14:52:16 - INFO - Req was made 
+15.1.2023, 14:57:02 - INFO - Req was made 
+15.1.2023, 14:57:20 - INFO - Req was made 
+15.1.2023, 14:57:20 - INFO - Req was made 
+15.1.2023, 15:12:41 - INFO - Req was made 
+15.1.2023, 15:12:41 - INFO - Req was made 
+15.1.2023, 15:24:33 - INFO - Req was made 
+15.1.2023, 15:24:34 - INFO - Req was made 
+15.1.2023, 15:29:25 - INFO - Req was made 
+15.1.2023, 15:29:26 - INFO - Req was made 
+15.1.2023, 15:30:09 - INFO - Req was made 
+15.1.2023, 15:30:09 - INFO - Req was made 
+15.1.2023, 15:30:16 - INFO - Req was made 
+15.1.2023, 15:30:16 - INFO - Req was made 
+15.1.2023, 15:30:56 - INFO - Req was made 
+15.1.2023, 15:30:57 - INFO - Req was made 
+15.1.2023, 15:31:00 - INFO - Req was made 
+15.1.2023, 15:31:02 - INFO - Req was made 
+15.1.2023, 15:31:07 - INFO - Req was made 
+15.1.2023, 15:31:14 - INFO - Req was made 
+15.1.2023, 15:31:15 - INFO - Req was made 
+15.1.2023, 15:34:43 - INFO - Req was made 
+15.1.2023, 15:34:44 - INFO - Req was made 
+15.1.2023, 15:34:52 - INFO - Req was made 
+15.1.2023, 15:34:52 - INFO - Req was made 
+15.1.2023, 15:36:01 - INFO - Req was made 
+15.1.2023, 15:36:02 - INFO - Req was made 
+15.1.2023, 15:36:02 - INFO - Req was made 
+15.1.2023, 15:53:01 - INFO - Req was made 
+15.1.2023, 15:53:01 - ERROR - cannot insert review | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 15:53:01 - ERROR - Failed to add review | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 15:54:35 - INFO - Req was made 
+15.1.2023, 15:54:35 - ERROR - cannot insert review | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 15:54:35 - ERROR - Failed to add review | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 15:55:23 - INFO - Req was made 
+15.1.2023, 15:55:23 - ERROR - Failed to add review | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 15:55:23 - ERROR - cannot insert review | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 15:56:11 - INFO - Req was made 
+15.1.2023, 15:56:11 - ERROR - cannot insert review | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 15:56:11 - ERROR - Failed to add review | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 15:56:48 - ERROR - cannot insert review | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 15:56:48 - INFO - Req was made 
+15.1.2023, 15:56:48 - ERROR - Failed to add review | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 15:58:01 - INFO - Req was made 
+15.1.2023, 15:58:01 - ERROR - cannot insert review | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 15:58:01 - ERROR - Failed to add review | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 15:58:59 - INFO - Req was made 
+15.1.2023, 15:58:59 - ERROR - cannot insert review | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 15:58:59 - ERROR - Failed to add review | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 16:00:07 - DEBUG - auth.service - login with username: TEST01 
+15.1.2023, 16:00:07 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 16:00:28 - DEBUG - auth.service - login with username: TEST1 
+15.1.2023, 16:00:28 - INFO - User login:  | {"_id":"63c1b69f7f6366d2f08c756f","username":"TEST1","fullname":"TEST1","score":0,"isAdmin":true} 
+15.1.2023, 16:00:38 - INFO - Req was made 
+15.1.2023, 16:03:03 - INFO - Req was made 
+15.1.2023, 16:04:14 - ERROR - cannot remove review 63c40706e02db4275adbc2d4 | TypeError: Cannot destructure property 'loggedinUser' of 'store' as it is undefined. 
+15.1.2023, 16:04:14 - ERROR - Failed to delete review | TypeError: Cannot destructure property 'loggedinUser' of 'store' as it is undefined. 
+15.1.2023, 16:09:23 - DEBUG - auth.service - login with username: TEST1 
+15.1.2023, 16:09:23 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 16:09:24 - DEBUG - auth.service - login with username: TEST1 
+15.1.2023, 16:09:24 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 16:09:39 - DEBUG - auth.service - login with username: TEST1 
+15.1.2023, 16:09:39 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 16:10:53 - DEBUG - auth.service - signup with username: pavel1, fullname: Pavel Duch 
+15.1.2023, 16:10:53 - DEBUG - auth.route - new account created: {"username":"pavel1","password":"$2b$10$ujWrRy.VxIRg6cKXjbeeU.v.hi.QN7Myzmac9S9v7mGnTZ2atGD3K","fullname":"Pavel Duch","score":0,"_id":"63c4096df8514f19d500125c"} 
+15.1.2023, 16:10:53 - DEBUG - auth.service - login with username: pavel1 
+15.1.2023, 16:10:53 - INFO - User login:  | {"_id":"63c4096df8514f19d500125c","username":"pavel1","fullname":"Pavel Duch","score":0} 
+15.1.2023, 16:11:09 - DEBUG - auth.service - login with username: pavel1 
+15.1.2023, 16:11:09 - INFO - User login:  | {"_id":"63c4096df8514f19d500125c","username":"pavel1","fullname":"Pavel Duch","score":0} 
+15.1.2023, 16:12:03 - INFO - Req was made 
+15.1.2023, 16:14:36 - INFO - Req was made 
+15.1.2023, 16:14:38 - INFO - Req was made 
+15.1.2023, 16:14:38 - INFO - Req was made 
+15.1.2023, 16:14:45 - INFO - Req was made 
+15.1.2023, 16:14:45 - INFO - Req was made 
+15.1.2023, 16:14:55 - DEBUG - auth.service - login with username: TEST1 
+15.1.2023, 16:14:55 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 16:14:56 - INFO - Req was made 
+15.1.2023, 16:15:12 - DEBUG - auth.service - login with username: pavel1 
+15.1.2023, 16:15:12 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 16:15:12 - INFO - Req was made 
+15.1.2023, 16:15:17 - DEBUG - auth.service - login with username: admin 
+15.1.2023, 16:15:17 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 16:15:18 - INFO - Req was made 
+15.1.2023, 16:15:19 - DEBUG - auth.service - login with username: admin 
+15.1.2023, 16:15:19 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 16:15:19 - INFO - Req was made 
+15.1.2023, 16:15:20 - DEBUG - auth.service - login with username: admin 
+15.1.2023, 16:15:20 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 16:15:20 - INFO - Req was made 
+15.1.2023, 16:15:21 - DEBUG - auth.service - login with username: admin 
+15.1.2023, 16:15:21 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 16:15:21 - INFO - Req was made 
+15.1.2023, 16:15:22 - DEBUG - auth.service - login with username: admin 
+15.1.2023, 16:15:22 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 16:15:22 - INFO - Req was made 
+15.1.2023, 16:15:22 - DEBUG - auth.service - login with username: admin 
+15.1.2023, 16:15:22 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 16:15:23 - INFO - Req was made 
+15.1.2023, 16:15:23 - DEBUG - auth.service - login with username: admin 
+15.1.2023, 16:15:23 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 16:15:24 - INFO - Req was made 
+15.1.2023, 16:15:24 - DEBUG - auth.service - login with username: admin 
+15.1.2023, 16:15:24 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 16:15:24 - INFO - Req was made 
+15.1.2023, 16:15:43 - DEBUG - auth.service - signup with username: pavel, fullname: PAVEL 
+15.1.2023, 16:15:43 - DEBUG - auth.route - new account created: {"username":"pavel","password":"$2b$10$vrZPX/Tgeg8.KysfRW.bYOBAvv/5/nCKEbwFozRBeVpq.K4ua95wC","fullname":"PAVEL","score":0,"_id":"63c40a8ff8514f19d500125e"} 
+15.1.2023, 16:15:43 - DEBUG - auth.service - login with username: pavel 
+15.1.2023, 16:15:43 - INFO - User login:  | {"_id":"63c40a8ff8514f19d500125e","username":"pavel","fullname":"PAVEL","score":0} 
+15.1.2023, 16:15:50 - INFO - Req was made 
+15.1.2023, 16:15:50 - INFO - Req was made 
+15.1.2023, 16:15:56 - INFO - Req was made 
+15.1.2023, 16:15:56 - INFO - Req was made 
+15.1.2023, 18:13:51 - INFO - Req was made 
+15.1.2023, 18:13:52 - INFO - Req was made 
+15.1.2023, 18:14:12 - DEBUG - auth.service - login with username: PAVEL 
+15.1.2023, 18:14:12 - ERROR - Failed to Login Invalid username or password 
+15.1.2023, 18:14:13 - INFO - Req was made 
+15.1.2023, 18:33:05 - INFO - Req was made 
+15.1.2023, 18:33:05 - INFO - Req was made 
+15.1.2023, 18:33:08 - INFO - Req was made 
+15.1.2023, 18:33:09 - INFO - Req was made 
+15.1.2023, 18:33:12 - INFO - Req was made 
+15.1.2023, 18:33:13 - INFO - Req was made 
+15.1.2023, 18:33:27 - DEBUG - auth.service - signup with username: mainAdmin, fullname: mainAdmin 
+15.1.2023, 18:33:27 - DEBUG - auth.route - new account created: {"username":"mainAdmin","password":"$2b$10$PhMjp4bkH3TpxYF7sJeaG.jtjY4IN4FiUekX.RO7C29RVumjwRoPS","fullname":"mainAdmin","score":0,"_id":"63c42ad7f8514f19d500125f"} 
+15.1.2023, 18:33:27 - DEBUG - auth.service - login with username: mainAdmin 
+15.1.2023, 18:33:28 - INFO - User login:  | {"_id":"63c42ad7f8514f19d500125f","username":"mainAdmin","fullname":"mainAdmin","score":0} 
+15.1.2023, 18:44:41 - INFO - Req was made 
+15.1.2023, 18:44:41 - INFO - Req was made 
+15.1.2023, 18:44:52 - DEBUG - auth.service - login with username: mainAdmin 
+15.1.2023, 18:44:52 - INFO - User login:  | {"_id":"63c42ad7f8514f19d500125f","username":"mainAdmin","fullname":"mainAdmin","score":0,"isAdmin":true} 
+15.1.2023, 18:50:42 - INFO - Req was made 
+15.1.2023, 18:50:42 - INFO - Req was made 
+15.1.2023, 18:51:00 - INFO - Req was made 
+15.1.2023, 18:51:00 - INFO - Req was made 
+15.1.2023, 18:54:07 - INFO - Req was made 
+15.1.2023, 18:54:08 - INFO - Req was made 
+15.1.2023, 19:35:39 - INFO - Req was made 
+15.1.2023, 19:36:00 - INFO - Req was made 
+15.1.2023, 19:36:02 - INFO - Req was made 
+15.1.2023, 19:38:17 - INFO - Req was made 
+15.1.2023, 19:42:09 - INFO - Req was made 
+15.1.2023, 19:42:09 - INFO - Req was made 
+15.1.2023, 19:42:19 - INFO - Req was made 
+15.1.2023, 19:42:21 - INFO - Req was made 
+15.1.2023, 19:42:23 - INFO - Req was made 
+15.1.2023, 19:42:25 - INFO - Req was made 
+15.1.2023, 19:42:26 - INFO - Req was made 
+15.1.2023, 19:42:31 - INFO - Req was made 
+15.1.2023, 20:31:11 - INFO - Req was made 
+15.1.2023, 20:31:13 - INFO - Req was made 
+15.1.2023, 20:31:13 - INFO - Req was made 
+15.1.2023, 20:31:16 - INFO - Req was made 
+15.1.2023, 20:31:39 - INFO - Req was made 
+15.1.2023, 20:32:23 - INFO - Req was made 
+15.1.2023, 20:34:22 - INFO - Req was made 

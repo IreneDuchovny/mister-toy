@@ -5,6 +5,7 @@ import { Link, useParams, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { toyService } from "../services/toy.service.js"
 import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service.js"
+import { saveToy } from '../store/toy.action.js'
 
 export function ToyEdit() {
     const [toyToEdit, setToyToEdit] = useState(toyService.getEmptyToy())
@@ -34,7 +35,7 @@ export function ToyEdit() {
 
     function onsaveToy(ev) {
         ev.preventDefault()
-        toyService.save(toyToEdit)
+        saveToy(toyToEdit)
             .then((toy) => {
                 console.log('toy saved', toy);
                 showSuccessMsg('Toy saved!')

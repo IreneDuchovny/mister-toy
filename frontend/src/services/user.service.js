@@ -13,7 +13,10 @@ export const userService = {
     signup,
     getById,
     getLoggedinUser,
-    updateScore
+    updateScore,
+    getUsers,
+    changeScore
+    
 }
 
 window.us = userService
@@ -92,6 +95,26 @@ function _setLoggedinUser(user) {
     sessionStorage.setItem(STORAGE_KEY_LOGGEDIN, JSON.stringify(userToSave))
     return userToSave
 }
+
+
+async function changeScore(by) {
+    const user = getLoggedinUser()
+    if (!user) throw new Error('Not loggedin')
+   // user.score = user.score + by || by
+   // await update(user)
+    return user.score
+}
+
+
+async function getUsers() {
+    try {
+    return httpService.get('user')
+    } catch (err) {
+        console.log('err:', err)
+    }
+
+}
+
 
 // Test Data
 // userService.signup({username: 'muki', password: 'muki1', fullname: 'Muki Ja'})

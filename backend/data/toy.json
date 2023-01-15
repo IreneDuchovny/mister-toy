@@ -12,6 +12,7 @@ db.toys.insertMany(
     "createdAt": 1631031801011,
     "inStock": true,
     "imgUrl": "toy1.png",
+    
     "owner": {
       "username": "puki",
       "fullname": "Puki Ja",

@@ -1,11 +1,11 @@
 var config
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === `production`) {
   config = require('./prod')
 } else {
   config = require('./dev')
 }
 
-config.isGuestMode = false
+config.isGuestMode = true
 
 module.exports = config
