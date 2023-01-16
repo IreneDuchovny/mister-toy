@@ -6,7 +6,7 @@ import { toyReducer } from './toy.reducer.js'
 import { reviewReducer } from './review.reducer'
 
 // const { createStore, combineReducers } = Redux
-const middleware = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__()
+// const middleware = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__()
 
 const rootReducer = combineReducers({
     appModule: appReducer,
@@ -15,7 +15,7 @@ const rootReducer = combineReducers({
     reviewModule: reviewReducer,
 })
 
-export const store = createStore(rootReducer, middleware)
+export const store = createStore(rootReducer)
 
 // For debug 
 store.subscribe(() => {

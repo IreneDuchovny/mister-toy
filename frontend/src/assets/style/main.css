@@ -17,6 +17,10 @@
 @import "cmps/shopping-cart.css";
 @import "cmps/toy-charts.css";
 @import "pages/home-page.css";
+@import "pages/toy-details.css";
+@import "pages/chat-app.css";
+
+
 .popup-menu {
   width: 300px;
   height: 400px;

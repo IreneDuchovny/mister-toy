@@ -5,6 +5,7 @@ const path = require('path')
 // const toyService = require('./services/util.service.js')
 const userService = require('./services/user.service.js')
 
+const {setupSocketAPI} = require('./services/socket.service')
 const app = express()
 const http = require('http').createServer(app)
 // App configuration (production)
@@ -42,6 +43,7 @@ app.use('/api/auth', authRoutes)
 app.use('/api/user', userRoutes)
 app.use('/api/toy', toyRoutes)
 app.use('/api/review', reviewRoutes)
+setupSocketAPI(http)
 
 // Make every server-side-route to match the index.html
 // so when requesting http://localhost:3030/index.html/car/123 it will still respond with

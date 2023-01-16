@@ -27,7 +27,8 @@ function setupSocketAPI(http) {
             // emits to all sockets:
             // gIo.emit('chat addMsg', msg)
             // emits only to sockets in the same room
-            gIo.to(socket.myTopic).emit('chat-add-msg', msg)
+            socket.broadcast.to(socket.myTopic).emit('chat-add-msg', msg)
+            // gIo.to(socket.myTopic).emit('chat-add-msg', msg)
         })
         socket.on('user-watch', userId => {
             logger.info(`user-watch from socket [id: ${socket.id}], on user ${userId}`)
@@ -41,6 +42,16 @@ function setupSocketAPI(http) {
         socket.on('unset-user-socket', () => {
             logger.info(`Removing socket.userId for socket [id: ${socket.id}]`)
             delete socket.userId
+        })
+
+        socket.on ('user-typing', ({from, txt}) => { 
+            logger.info(`user-typing from socket [id: ${socket.id}], on user ${from}`)
+            socket.broadcast.to(socket.myTopic).emit('user-typing',{from, txt} )
+        })
+
+        socket.on ('user-stopped-typing', ({from, txt}) => { 
+            logger.info(`user-stopped-typing from socket [id: ${socket.id}], on user ${from}`)
+            socket.broadcast.to(socket.myTopic).emit('user-stopped-typing',{from, txt} )
         })
 
     })

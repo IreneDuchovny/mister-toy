@@ -6,6 +6,7 @@ import { Link, useParams, useNavigate } from 'react-router-dom'
 import { CloudinaryImage } from '@cloudinary/url-gen';
 
 import { AdvancedImage } from "@cloudinary/react";
+import { ChatApp } from '../pages/chat-app.jsx'
 
 
 import { toyService } from "../services/toy.service.js"
@@ -38,12 +39,24 @@ export function ToyDetails() {
 
     if (!toy) return <div>Loading...</div>
     return <section className="toy-details">
+        <div className="toy-details-main-container">
+         <AdvancedImage cldImg={new CloudinaryImage(`${toy.imgUrl || 'default.png'}`, { cloudName: 'dfkarsfm0' })} />
+         <div className="toy-details-info">
         <h1>{toy.name}</h1>
-        <h5>Price: ${toy.price}</h5>
+        <h5>${toy.price}.00</h5>
         {/* <img src={require(`../assets/img/${toy.imgUrl || 'default.png'}`)} /> */}
-        <AdvancedImage cldImg={new CloudinaryImage(`${toy.imgUrl || 'default.png'}`, { cloudName: 'dfkarsfm0' })} />
+       
         <p>{toy.description}</p>
-        {user && user.isAdmin && <Link to={`/toy/edit/${toy._id}`}>Edit</Link>}
-        {user && <Link to={`/toy/review/${toy._id}`}>Add review</Link>}
+        <div className="review-edit-btns">
+       <button> {user && <Link to={`/toy/review/${toy._id}`}>Add review</Link>}</button>
+       <button> {user && user.isAdmin && <Link to={`/toy/edit/${toy._id}`}>Edit</Link>}</button>
+       </div>
+        </div>
+        <div className="chat-Area">
+        {user && <ChatApp toyName={toy.name} /> }
+        </div>
+        </div>
+        
+      
     </section>
 }
