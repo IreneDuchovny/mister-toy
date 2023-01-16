@@ -20,28 +20,29 @@ export const toyService = {
     getDefaultFilter,
     getToyTypes,
     getTotalForType,
-    getTotalPrecentPerType
+    getTotalPrecentPerType,
+    saveChat
 
 }
 window.ts = toyService
 
 async function query(filterBy = getDefaultFilter()) {
-   
-    return httpService.get(BASE_URL, filterBy)
-// }
 
-// function query(filterBy = getDefaultFilter()) {
-//     return storageService.query(STORAGE_KEY)
-//         .then(toys => {
-//             if (filterBy.txt) {
-//                 const regex = new RegExp(filterBy.txt, 'i')
-//                 toys = toys.filter(toy => regex.testtoy.name)
-//             }
-//             if (filterBy.maxPrice) {
-//                 toys = toys.filter(toy => toy.price <= filterBy.maxPrice)
-//             }
-//             return toys
-//         })
+    return httpService.get(BASE_URL, filterBy)
+    // }
+
+    // function query(filterBy = getDefaultFilter()) {
+    //     return storageService.query(STORAGE_KEY)
+    //         .then(toys => {
+    //             if (filterBy.txt) {
+    //                 const regex = new RegExp(filterBy.txt, 'i')
+    //                 toys = toys.filter(toy => regex.testtoy.name)
+    //             }
+    //             if (filterBy.maxPrice) {
+    //                 toys = toys.filter(toy => toy.price <= filterBy.maxPrice)
+    //             }
+    //             return toys
+    //         })
 }
 
 async function getById(toyId) {
@@ -59,7 +60,7 @@ async function remove(toyId) {
 
 async function save(toy) {
     if (toy._id) {
-        return httpService.put(BASE_URL+toy._id, toy)
+        return httpService.put(BASE_URL + toy._id, toy)
         // return storageService.put(STORAGE_KEY, toy)
     } else {
         // when switching to backend - remove the next line
@@ -74,6 +75,10 @@ function getEmptyToy() {
         "inStock": true
     }
 }
+async function saveChat(toyId, chat) {
+    return httpService.put(BASE_URL + toyId + "/chat", chat)
+}
+
 
 function getTotalPrecentPerType(type) {
     return storageService.query(STORAGE_KEY)
@@ -85,10 +90,6 @@ function getTotalPrecentPerType(type) {
             return (inStockToys.length / len) * 100;
         })
 }
-
-
-
-
 
 function getTotalForType(type) {
     return storageService.query(STORAGE_KEY)
@@ -105,7 +106,7 @@ function getToyTypes() {
 
 
 function getDefaultFilter() {
-    return { txt: '', label: '', maxPrice: 1000,  }
+    return { txt: '', label: '', maxPrice: 1000, }
 }
 
 

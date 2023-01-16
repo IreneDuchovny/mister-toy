@@ -29,7 +29,7 @@ async function addToy(req, res) {
     try {
         // add timestamp
         toy.createdAt = Date.now()
-       
+
         const savedToy = await toyService.add(toy)
         res.json(savedToy)
     } catch (err) {
@@ -60,10 +60,23 @@ async function removeToy(req, res) {
     }
 }
 
+async function onSaveChat(req, res) {
+    const toyId = req.params.id
+    const chat = req.body
+    try {
+        const savedChat = await toyService.saveChat(toyId, chat)
+        res.json({ msg: 'chat saved successfully', savedChat })
+    } catch (err) {
+        console.error('Failed to save chat', err)
+        res.status(500).send({ err: 'Failed to save chat' })
+    }
+}
+
 module.exports = {
     getToys,
     getToyById,
     addToy,
     removeToy,
-    updateToy
+    updateToy,
+    onSaveChat
 }

@@ -1145,3 +1145,230 @@
 16.1.2023, 17:14:58 - INFO - user-stopped-typing from socket [id: J__cuAbbPf3PCfEOAABF], on user mainAdmin 
 16.1.2023, 17:14:59 - INFO - user-stopped-typing from socket [id: J__cuAbbPf3PCfEOAABF], on user mainAdmin 
 16.1.2023, 17:14:59 - INFO - user-stopped-typing from socket [id: J__cuAbbPf3PCfEOAABF], on user mainAdmin 
+16.1.2023, 17:42:50 - INFO - Socket disconnected [id: undefined] 
+16.1.2023, 17:42:50 - INFO - Socket disconnected [id: undefined] 
+16.1.2023, 18:57:55 - INFO - New connected socket [id: qTpXYdX01RtxSC46AABH] 
+16.1.2023, 18:58:01 - INFO - New connected socket [id: hLXBmWs_73qAg25CAABJ] 
+16.1.2023, 19:21:15 - INFO - New connected socket [id: YwI8Y9kUCLS5K-VnAAAB] 
+16.1.2023, 19:21:19 - INFO - New connected socket [id: v826OBhyyeSY27VQAAAD] 
+16.1.2023, 19:21:32 - INFO - New connected socket [id: wmylm5ynZ7V7g3RGAAAB] 
+16.1.2023, 19:21:33 - INFO - New connected socket [id: EsU-qHD7PG_X6VuHAAAD] 
+16.1.2023, 19:24:07 - INFO - New connected socket [id: Ajsxi1IA6yAbcefcAAAC] 
+16.1.2023, 19:24:07 - INFO - New connected socket [id: dWSfSbWKU-MdezPHAAAD] 
+16.1.2023, 19:25:49 - INFO - Req was made 
+16.1.2023, 19:25:53 - INFO - Req was made 
+16.1.2023, 19:25:53 - INFO - Req was made 
+16.1.2023, 19:26:00 - INFO - Socket is leaving topic Remote Control toy [id: dWSfSbWKU-MdezPHAAAD] 
+16.1.2023, 19:26:03 - INFO - user-typing from socket [id: dWSfSbWKU-MdezPHAAAD], on user mainAdmin 
+16.1.2023, 19:26:03 - INFO - user-typing from socket [id: dWSfSbWKU-MdezPHAAAD], on user mainAdmin 
+16.1.2023, 19:26:03 - INFO - user-typing from socket [id: dWSfSbWKU-MdezPHAAAD], on user mainAdmin 
+16.1.2023, 19:26:03 - INFO - user-typing from socket [id: dWSfSbWKU-MdezPHAAAD], on user mainAdmin 
+16.1.2023, 19:26:03 - INFO - user-typing from socket [id: dWSfSbWKU-MdezPHAAAD], on user mainAdmin 
+16.1.2023, 19:26:03 - INFO - user-typing from socket [id: dWSfSbWKU-MdezPHAAAD], on user mainAdmin 
+16.1.2023, 19:26:03 - INFO - user-typing from socket [id: dWSfSbWKU-MdezPHAAAD], on user mainAdmin 
+16.1.2023, 19:26:04 - INFO - New chat msg from socket [id: dWSfSbWKU-MdezPHAAAD], emitting to topic null 
+16.1.2023, 19:26:04 - INFO - user-stopped-typing from socket [id: dWSfSbWKU-MdezPHAAAD], on user mainAdmin 
+16.1.2023, 19:26:04 - INFO - user-stopped-typing from socket [id: dWSfSbWKU-MdezPHAAAD], on user mainAdmin 
+16.1.2023, 19:26:04 - INFO - user-stopped-typing from socket [id: dWSfSbWKU-MdezPHAAAD], on user mainAdmin 
+16.1.2023, 19:26:04 - INFO - user-stopped-typing from socket [id: dWSfSbWKU-MdezPHAAAD], on user mainAdmin 
+16.1.2023, 19:26:04 - INFO - user-stopped-typing from socket [id: dWSfSbWKU-MdezPHAAAD], on user mainAdmin 
+16.1.2023, 19:26:04 - INFO - user-stopped-typing from socket [id: dWSfSbWKU-MdezPHAAAD], on user mainAdmin 
+16.1.2023, 19:27:40 - INFO - New connected socket [id: 3cvHxrRSoZEv7LBqAAAC] 
+16.1.2023, 19:27:40 - INFO - New connected socket [id: AS8tgUEBHvTOcAXlAAAD] 
+16.1.2023, 19:50:45 - INFO - Socket disconnected [id: undefined] 
+16.1.2023, 19:50:45 - INFO - New connected socket [id: Z0Ipzcxb69EZgycYAAAF] 
+16.1.2023, 19:50:46 - INFO - Req was made 
+16.1.2023, 19:50:46 - INFO - Setting socket.userId = 63c42ad7f8514f19d500125f for socket [id: Z0Ipzcxb69EZgycYAAAF] 
+16.1.2023, 19:50:48 - INFO - Req was made 
+16.1.2023, 19:50:49 - INFO - Req was made 
+16.1.2023, 19:50:53 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:53 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:53 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:53 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:53 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:53 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:53 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:53 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:53 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:53 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:54 - INFO - New chat msg from socket [id: Z0Ipzcxb69EZgycYAAAF], emitting to topic Remote Control toy 
+16.1.2023, 19:50:54 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:54 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:54 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:54 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:54 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:54 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:54 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:54 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:54 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:54 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:55 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:55 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:55 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:55 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:55 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:55 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:56 - INFO - New chat msg from socket [id: Z0Ipzcxb69EZgycYAAAF], emitting to topic Remote Control toy 
+16.1.2023, 19:50:56 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:56 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:56 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:56 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:56 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:59 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:59 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:59 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:59 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:59 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:59 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:59 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:59 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:59 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:59 - INFO - user-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:50:59 - INFO - New chat msg from socket [id: Z0Ipzcxb69EZgycYAAAF], emitting to topic Remote Control toy 
+16.1.2023, 19:51:00 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:51:00 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:51:00 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:51:00 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:51:00 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:51:00 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:51:00 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:51:00 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:51:00 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:51:00 - INFO - user-stopped-typing from socket [id: Z0Ipzcxb69EZgycYAAAF], on user mainAdmin 
+16.1.2023, 19:51:02 - INFO - Socket disconnected [id: undefined] 
+16.1.2023, 19:51:02 - INFO - New connected socket [id: hUqSU_AhSmsL1WHyAAAH] 
+16.1.2023, 19:51:02 - INFO - Setting socket.userId = 63c42ad7f8514f19d500125f for socket [id: hUqSU_AhSmsL1WHyAAAH] 
+16.1.2023, 19:51:04 - INFO - Req was made 
+16.1.2023, 19:51:05 - INFO - Req was made 
+16.1.2023, 19:51:05 - INFO - Req was made 
+16.1.2023, 19:51:05 - INFO - Socket is leaving topic Remote Control toy [id: hUqSU_AhSmsL1WHyAAAH] 
+16.1.2023, 19:51:09 - INFO - Req was made 
+16.1.2023, 19:51:10 - INFO - Req was made 
+16.1.2023, 19:51:11 - INFO - Socket is leaving topic Board Game [id: hUqSU_AhSmsL1WHyAAAH] 
+16.1.2023, 19:51:13 - INFO - Req was made 
+16.1.2023, 19:51:13 - INFO - Req was made 
+16.1.2023, 19:51:17 - INFO - Socket is leaving topic Rubber Duck [id: hUqSU_AhSmsL1WHyAAAH] 
+16.1.2023, 19:54:33 - INFO - Req was made 
+16.1.2023, 19:54:33 - INFO - Req was made 
+16.1.2023, 19:54:34 - INFO - Socket is leaving topic Remote Control toy [id: hUqSU_AhSmsL1WHyAAAH] 
+16.1.2023, 19:54:36 - INFO - user-typing from socket [id: hUqSU_AhSmsL1WHyAAAH], on user mainAdmin 
+16.1.2023, 19:54:36 - INFO - user-typing from socket [id: hUqSU_AhSmsL1WHyAAAH], on user mainAdmin 
+16.1.2023, 19:54:36 - INFO - user-typing from socket [id: hUqSU_AhSmsL1WHyAAAH], on user mainAdmin 
+16.1.2023, 19:54:36 - INFO - user-typing from socket [id: hUqSU_AhSmsL1WHyAAAH], on user mainAdmin 
+16.1.2023, 19:54:36 - INFO - user-typing from socket [id: hUqSU_AhSmsL1WHyAAAH], on user mainAdmin 
+16.1.2023, 19:54:36 - INFO - user-typing from socket [id: hUqSU_AhSmsL1WHyAAAH], on user mainAdmin 
+16.1.2023, 19:54:36 - INFO - user-typing from socket [id: hUqSU_AhSmsL1WHyAAAH], on user mainAdmin 
+16.1.2023, 19:54:36 - INFO - user-typing from socket [id: hUqSU_AhSmsL1WHyAAAH], on user mainAdmin 
+16.1.2023, 19:54:37 - INFO - New chat msg from socket [id: hUqSU_AhSmsL1WHyAAAH], emitting to topic Puzzle Sculpture 
+16.1.2023, 19:54:37 - INFO - user-stopped-typing from socket [id: hUqSU_AhSmsL1WHyAAAH], on user mainAdmin 
+16.1.2023, 19:54:37 - INFO - user-stopped-typing from socket [id: hUqSU_AhSmsL1WHyAAAH], on user mainAdmin 
+16.1.2023, 19:54:37 - INFO - user-stopped-typing from socket [id: hUqSU_AhSmsL1WHyAAAH], on user mainAdmin 
+16.1.2023, 19:54:37 - INFO - user-stopped-typing from socket [id: hUqSU_AhSmsL1WHyAAAH], on user mainAdmin 
+16.1.2023, 19:54:37 - INFO - user-stopped-typing from socket [id: hUqSU_AhSmsL1WHyAAAH], on user mainAdmin 
+16.1.2023, 19:54:37 - INFO - user-stopped-typing from socket [id: hUqSU_AhSmsL1WHyAAAH], on user mainAdmin 
+16.1.2023, 19:54:38 - INFO - user-stopped-typing from socket [id: hUqSU_AhSmsL1WHyAAAH], on user mainAdmin 
+16.1.2023, 19:54:38 - INFO - user-stopped-typing from socket [id: hUqSU_AhSmsL1WHyAAAH], on user mainAdmin 
+16.1.2023, 19:54:39 - INFO - Req was made 
+16.1.2023, 19:54:39 - INFO - Req was made 
+16.1.2023, 19:54:40 - INFO - Socket is leaving topic Puzzle Sculpture [id: hUqSU_AhSmsL1WHyAAAH] 
+16.1.2023, 19:54:42 - INFO - Req was made 
+16.1.2023, 19:54:42 - INFO - Req was made 
+16.1.2023, 19:54:43 - INFO - Socket is leaving topic 3D Printing Pen [id: hUqSU_AhSmsL1WHyAAAH] 
+16.1.2023, 19:54:53 - DEBUG - auth.service - login with username: admin 
+16.1.2023, 19:54:53 - ERROR - Failed to Login Invalid username or password 
+16.1.2023, 19:54:53 - INFO - Socket disconnected [id: undefined] 
+16.1.2023, 19:54:54 - INFO - Req was made 
+16.1.2023, 19:54:54 - INFO - New connected socket [id: sDFPXMEMAiFF5xIeAAAJ] 
+16.1.2023, 19:55:02 - DEBUG - auth.service - login with username: admin 
+16.1.2023, 19:55:02 - ERROR - Failed to Login Invalid username or password 
+16.1.2023, 19:55:02 - INFO - Socket disconnected [id: undefined] 
+16.1.2023, 19:55:02 - INFO - New connected socket [id: TQt_0pfqc5sdqz-hAAAL] 
+16.1.2023, 19:55:02 - INFO - Req was made 
+16.1.2023, 19:55:05 - DEBUG - auth.service - login with username: admin 
+16.1.2023, 19:55:05 - ERROR - Failed to Login Invalid username or password 
+16.1.2023, 19:55:05 - INFO - Socket disconnected [id: undefined] 
+16.1.2023, 19:55:05 - INFO - New connected socket [id: fTwl2XZKF67Ip2EOAAAN] 
+16.1.2023, 19:55:05 - INFO - Req was made 
+16.1.2023, 19:55:14 - DEBUG - auth.service - signup with username: admin, fullname: Irene 
+16.1.2023, 19:55:14 - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$e6wLkJlgH5dbFHH8U5R1sOgSm2eu1Uce01.gOdC3T4S7UB1/LMq3O","fullname":"Irene","score":0,"_id":"63c58f829e821e3f121265db"} 
+16.1.2023, 19:55:14 - DEBUG - auth.service - login with username: admin 
+16.1.2023, 19:55:14 - INFO - User login:  | {"_id":"63c58f829e821e3f121265db","username":"admin","fullname":"Irene","score":0} 
+16.1.2023, 19:55:19 - INFO - Req was made 
+16.1.2023, 19:55:19 - INFO - Req was made 
+16.1.2023, 19:55:22 - INFO - Req was made 
+16.1.2023, 19:55:22 - INFO - Req was made 
+16.1.2023, 19:55:23 - INFO - Socket is leaving topic Remote Control toy [id: fTwl2XZKF67Ip2EOAAAN] 
+16.1.2023, 19:55:40 - INFO - Req was made 
+16.1.2023, 19:55:40 - INFO - Req was made 
+16.1.2023, 19:55:42 - INFO - Socket is leaving topic Puzzle Sculpture [id: fTwl2XZKF67Ip2EOAAAN] 
+16.1.2023, 19:57:05 - INFO - Req was made 
+16.1.2023, 19:57:11 - DEBUG - auth.service - signup with username: pavel, fullname: pavel 
+16.1.2023, 19:57:11 - DEBUG - auth.route - new account created: {"username":"pavel","password":"$2b$10$pPClHvIIBIlR.aLN4SvkwegpnzZaDAqXqoJd5xyLN0Xzo2f12QaDm","fullname":"pavel","score":0,"_id":"63c58ff79e821e3f121265dc"} 
+16.1.2023, 19:57:11 - DEBUG - auth.service - login with username: pavel 
+16.1.2023, 19:57:11 - ERROR - Failed to signup Invalid username or password 
+16.1.2023, 19:57:12 - DEBUG - auth.service - signup with username: pavel, fullname: pavel 
+16.1.2023, 19:57:13 - DEBUG - auth.route - new account created: {"username":"pavel","password":"$2b$10$MWlns1MDoJ.jQmhWh5FJN.QcroWiC0boewKK0D6B4QR7GArQNreU2","fullname":"pavel","score":0,"_id":"63c58ff99e821e3f121265dd"} 
+16.1.2023, 19:57:13 - DEBUG - auth.service - login with username: pavel 
+16.1.2023, 19:57:13 - ERROR - Failed to signup Invalid username or password 
+16.1.2023, 19:57:14 - DEBUG - auth.service - signup with username: pavel, fullname: pavel 
+16.1.2023, 19:57:15 - DEBUG - auth.route - new account created: {"username":"pavel","password":"$2b$10$QGPIvbqQMqWooUJ.wTMNvekI6yeFX25za2FHOg2mRs/Q8tBx4W1mC","fullname":"pavel","score":0,"_id":"63c58ffb9e821e3f121265de"} 
+16.1.2023, 19:57:15 - DEBUG - auth.service - login with username: pavel 
+16.1.2023, 19:57:15 - ERROR - Failed to signup Invalid username or password 
+16.1.2023, 19:57:18 - DEBUG - auth.service - signup with username: pavel, fullname: pavel 
+16.1.2023, 19:57:18 - DEBUG - auth.route - new account created: {"username":"pavel","password":"$2b$10$QNGrY3cmcfCP9Fzi4Y497OImIq91FuJw9CS.bdJHdvUfgnhOX0dK6","fullname":"pavel","score":0,"_id":"63c58ffe9e821e3f121265df"} 
+16.1.2023, 19:57:18 - DEBUG - auth.service - login with username: pavel 
+16.1.2023, 19:57:19 - ERROR - Failed to signup Invalid username or password 
+16.1.2023, 19:57:19 - DEBUG - auth.service - signup with username: pavel, fullname: pavel 
+16.1.2023, 19:57:19 - DEBUG - auth.route - new account created: {"username":"pavel","password":"$2b$10$6KXorW7LDn/WYpzC.3BA/ePwwCuKB5g9sPLF.1Cpp3sjJrpA0d4PC","fullname":"pavel","score":0,"_id":"63c58fff9e821e3f121265e0"} 
+16.1.2023, 19:57:19 - DEBUG - auth.service - login with username: pavel 
+16.1.2023, 19:57:19 - ERROR - Failed to signup Invalid username or password 
+16.1.2023, 19:57:25 - DEBUG - auth.service - signup with username: pavel1, fullname: pavel 
+16.1.2023, 19:57:25 - DEBUG - auth.route - new account created: {"username":"pavel1","password":"$2b$10$.4hUVqFa990VJeXBsSxgO.59kpgtDjLk8iIsJOx5bXl8rceSNXrNC","fullname":"pavel","score":0,"_id":"63c590059e821e3f121265e1"} 
+16.1.2023, 19:57:25 - DEBUG - auth.service - login with username: pavel1 
+16.1.2023, 19:57:25 - INFO - User login:  | {"_id":"63c590059e821e3f121265e1","username":"pavel1","fullname":"pavel","score":0} 
+16.1.2023, 19:57:30 - INFO - Req was made 
+16.1.2023, 19:57:30 - INFO - Req was made 
+16.1.2023, 19:57:31 - INFO - Socket is leaving topic Remote Control toy [id: fTwl2XZKF67Ip2EOAAAN] 
+16.1.2023, 19:59:30 - INFO - Req was made 
+16.1.2023, 19:59:31 - INFO - Req was made 
+16.1.2023, 19:59:31 - INFO - Socket is leaving topic Puzzle Sculpture [id: fTwl2XZKF67Ip2EOAAAN] 
+16.1.2023, 19:59:33 - INFO - Req was made 
+16.1.2023, 19:59:33 - INFO - Req was made 
+16.1.2023, 19:59:34 - INFO - Socket is leaving topic 3D Printing Pen [id: fTwl2XZKF67Ip2EOAAAN] 
+16.1.2023, 19:59:36 - INFO - user-typing from socket [id: fTwl2XZKF67Ip2EOAAAN], on user pavel 
+16.1.2023, 19:59:36 - INFO - user-typing from socket [id: fTwl2XZKF67Ip2EOAAAN], on user pavel 
+16.1.2023, 19:59:36 - INFO - user-typing from socket [id: fTwl2XZKF67Ip2EOAAAN], on user pavel 
+16.1.2023, 19:59:36 - INFO - user-typing from socket [id: fTwl2XZKF67Ip2EOAAAN], on user pavel 
+16.1.2023, 19:59:36 - INFO - user-typing from socket [id: fTwl2XZKF67Ip2EOAAAN], on user pavel 
+16.1.2023, 19:59:37 - INFO - user-typing from socket [id: fTwl2XZKF67Ip2EOAAAN], on user pavel 
+16.1.2023, 19:59:37 - INFO - user-typing from socket [id: fTwl2XZKF67Ip2EOAAAN], on user pavel 
+16.1.2023, 19:59:37 - INFO - user-typing from socket [id: fTwl2XZKF67Ip2EOAAAN], on user pavel 
+16.1.2023, 19:59:37 - INFO - user-typing from socket [id: fTwl2XZKF67Ip2EOAAAN], on user pavel 
+16.1.2023, 19:59:37 - INFO - user-typing from socket [id: fTwl2XZKF67Ip2EOAAAN], on user pavel 
+16.1.2023, 19:59:37 - INFO - New chat msg from socket [id: fTwl2XZKF67Ip2EOAAAN], emitting to topic Musical Instrument 
+16.1.2023, 19:59:37 - INFO - user-stopped-typing from socket [id: fTwl2XZKF67Ip2EOAAAN], on user pavel 
+16.1.2023, 19:59:37 - INFO - user-stopped-typing from socket [id: fTwl2XZKF67Ip2EOAAAN], on user pavel 
+16.1.2023, 19:59:37 - INFO - user-stopped-typing from socket [id: fTwl2XZKF67Ip2EOAAAN], on user pavel 
+16.1.2023, 19:59:37 - INFO - user-stopped-typing from socket [id: fTwl2XZKF67Ip2EOAAAN], on user pavel 
+16.1.2023, 19:59:38 - INFO - user-stopped-typing from socket [id: fTwl2XZKF67Ip2EOAAAN], on user pavel 
+16.1.2023, 19:59:38 - INFO - user-stopped-typing from socket [id: fTwl2XZKF67Ip2EOAAAN], on user pavel 
+16.1.2023, 19:59:38 - INFO - user-stopped-typing from socket [id: fTwl2XZKF67Ip2EOAAAN], on user pavel 
+16.1.2023, 19:59:38 - INFO - user-stopped-typing from socket [id: fTwl2XZKF67Ip2EOAAAN], on user pavel 
+16.1.2023, 19:59:38 - INFO - user-stopped-typing from socket [id: fTwl2XZKF67Ip2EOAAAN], on user pavel 
+16.1.2023, 19:59:38 - INFO - user-stopped-typing from socket [id: fTwl2XZKF67Ip2EOAAAN], on user pavel 
+16.1.2023, 20:00:01 - INFO - Req was made 
+16.1.2023, 20:00:02 - INFO - Req was made 
+16.1.2023, 20:12:17 - INFO - Socket disconnected [id: undefined] 
+16.1.2023, 20:12:17 - INFO - Socket disconnected [id: undefined] 
+16.1.2023, 21:23:41 - INFO - New connected socket [id: hZBN30JICaaWeKanAAAP] 
+16.1.2023, 21:23:46 - INFO - New connected socket [id: DraK6hl8eIFhBd05AAAR] 
+16.1.2023, 21:28:09 - INFO - New connected socket [id: IUd-DjrSgBirh-iBAAAC] 
+16.1.2023, 21:28:09 - INFO - New connected socket [id: B8AZCPMN8kQuw1kEAAAD] 
+16.1.2023, 21:28:54 - INFO - New connected socket [id: vu4MKkmQF6du5YEAAAAC] 
+16.1.2023, 21:28:54 - INFO - New connected socket [id: HsqH0Le02ANhcM7MAAAD] 
+16.1.2023, 21:31:11 - INFO - New connected socket [id: k8DdppTK41hzA--VAAAD] 
+16.1.2023, 21:31:11 - INFO - New connected socket [id: 2ziEDZUALodspkB3AAAC] 
+16.1.2023, 21:32:28 - INFO - New connected socket [id: YM2En-GkOXbOLc31AAAC] 
+16.1.2023, 21:32:28 - INFO - New connected socket [id: QYkK1Ku64F7KF1n7AAAD] 
+16.1.2023, 21:33:09 - INFO - New connected socket [id: EKR7iKNnk--OApUEAAAC] 
+16.1.2023, 21:33:09 - INFO - New connected socket [id: 5MFrZCLKGj_hVHxJAAAD] 

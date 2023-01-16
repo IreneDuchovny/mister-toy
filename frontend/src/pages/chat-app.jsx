@@ -3,10 +3,10 @@ import { useSelector } from 'react-redux'
 
 import { socketService, SOCKET_EMIT_SEND_MSG, SOCKET_EVENT_ADD_MSG, SOCKET_EMIT_SET_TOPIC, SOCKET_EVENT_IS_TYPING, SOCKET_EVENT_STOP_TYPING } from '../services/socket.service'
 
-export function ChatApp({ toyId, toyName }) {
+export function ChatApp({ toy, onSaveChat }) {
     const [msg, setMsg] = useState({ txt: '' })
-    const [msgs, setMsgs] = useState([])
-    const [topic, setTopic] = useState(toyName)
+    const [msgs, setMsgs] = useState(toy.chat || [])
+    const [topic, setTopic] = useState(toy.name)
     const [isBotMode, setIsBotMode] = useState(false)
     const [isTyping, setIsTyping] = useState(false)
 
@@ -42,15 +42,21 @@ export function ChatApp({ toyId, toyName }) {
         }, 1250)
     }
 
-    function sendMsg(ev) {
+    async function sendMsg(ev) {
         ev.preventDefault()
-        const from = loggedInUser?.fullname || 'Me'
-        const newMsg = { from, txt: msg.txt }
-        socketService.emit(SOCKET_EMIT_SEND_MSG, newMsg)
-        if (isBotMode) sendBotResponse()
-        // for now - we add the msg ourself
-        addMsg(newMsg)
-        setMsg({ txt: '' })
+        try {
+            const from = loggedInUser?.fullname || 'Me'
+            const newMsg = { from, txt: msg.txt }
+            socketService.emit(SOCKET_EMIT_SEND_MSG, newMsg)
+            if (isBotMode) sendBotResponse()
+            // for now - we add the msg ourself
+            onSaveChat(toy._id, newMsg)
+            addMsg(newMsg)
+            setMsg({ txt: '' })
+        } catch (err) {
+            console.log('cant save msg')
+            throw err
+        }
     }
 
     function handleFormChange(ev) {
@@ -65,10 +71,11 @@ export function ChatApp({ toyId, toyName }) {
 
     function onStopTyping() {
         console.log('stopped typing...')
-        setTimeout( () => {
+        setTimeout(() => {
 
-            
-            socketService.emit(SOCKET_EVENT_STOP_TYPING, { from: loggedInUser?.fullname, txt: '' })}, 1000)
+
+            socketService.emit(SOCKET_EVENT_STOP_TYPING, { from: loggedInUser?.fullname, txt: '' })
+        }, 1000)
     }
 
     return (
@@ -107,7 +114,7 @@ export function ChatApp({ toyId, toyName }) {
             </form>
 
             <ul>
-                {msgs.map((msg, idx) => (<li key={idx}> <span className="chat-from">{msg.from}</span>: {msg.txt} <hr/></li>))}
+                {msgs.map((msg, idx) => (<li key={idx}> <span className="chat-from">{msg.from}</span>: {msg.txt} <hr /></li>))}
 
             </ul>
         </section>

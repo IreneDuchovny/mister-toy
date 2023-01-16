@@ -13,7 +13,7 @@ async function query(filterBy = {}) {
         if (filterBy.label) {
             criteria.labels = filterBy.label
         }
-  if (filterBy.maxPrice) {
+        if (filterBy.maxPrice) {
             criteria.price = { $lte: +filterBy.maxPrice }
         }
         if (filterBy.type) {
@@ -71,7 +71,7 @@ async function update(toy) {
 async function add(toy) {
     try {
         const collection = await dbService.getCollection('toys')
-
+        toy.chat = []
         await collection.insertOne(toy)
         return toy
     } catch (err) {
@@ -79,6 +79,16 @@ async function add(toy) {
         throw err
     }
 }
+async function saveChat(toyId, message) {
+    try {
+        const collection = await dbService.getCollection('toys')
+        await collection.updateOne({ _id: ObjectId(toyId) }, { $push: { chat: message } })
+    } catch (err) {
+        console.error(`cannot update toy ${toyId}`, err)
+        throw err
+    }
+}
+
 
 //todo: add messages service 
 
@@ -87,5 +97,6 @@ module.exports = {
     getById,
     remove,
     update,
-    add
+    add,
+    saveChat
 }

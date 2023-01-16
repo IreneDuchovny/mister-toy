@@ -34,7 +34,14 @@ export function ToyDetails() {
             navigate('/toy')
         }
     }
-
+async function onSaveChat(toyId, chat){
+    try {
+        await toyService.saveChat(toyId, chat)
+        loadToy()
+    } catch (err) {
+        showErrorMsg('Cannot save chat')
+    }
+}
 
 
     if (!toy) return <div>Loading...</div>
@@ -48,13 +55,13 @@ export function ToyDetails() {
        
         <p>{toy.description}</p>
         <div className="review-edit-btns">
-       <button> {user && <Link to={`/toy/review/${toy._id}`}>Add review</Link>}</button>
-       <button> {user && user.isAdmin && <Link to={`/toy/edit/${toy._id}`}>Edit</Link>}</button>
+        {user && <button><Link to={`/toy/review/${toy._id}`}>Add review</Link></button>}
+        {user && user.isAdmin && <button><Link to={`/toy/edit/${toy._id}`}>Edit</Link></button>}
        </div>
         </div>
-        <div className="chat-Area">
-        {user && <ChatApp toyName={toy.name} /> }
-        </div>
+        
+        {user && <div className="chat-Area"><ChatApp toy={toy}  onSaveChat={onSaveChat}/></div> }
+        
         </div>
         
       
